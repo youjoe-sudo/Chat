@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدخول والدردشة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- أضف هذه المكتبة -->
+</head>
+<body>
+    <!-- صفحة تسجيل الدخول -->
+    <div id="login-section">
+        <h2>تسجيل الدخول</h2>
+        <input type="text" id="username" placeholder="اسم المستخدم">
+        <input type="password" id="password" placeholder="كلمة المرور">
+        <button onclick="checkCredentials()">دخول</button>
+        <p id="error-message" style="color: red; display: none;">اسم المستخدم أو كلمة المرور غير صحيحة.</p>
+    </div>
+
+    <!-- صفحة المحتوى (الدردشة) بعد تسجيل الدخول بنجاح -->
+    <div id="chat-section" style="display: none;">
+        <h2>أهلاً بك في الدردشة!</h2>
+        <p>يمكنك الآن التحدث مع الدعم.</p>
+    </div>
+
+    <!-- سكريبت Tawk.to سيتم تحميله بعد تسجيل الدخول بنجاح -->
+    <div id="tawk-to-chat"></div> <!-- لا يوجد سكريبت هنا بعد -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
